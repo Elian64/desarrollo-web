@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 id="title">Formulario</h1>
+    <p id="description">Formulario sobre consultas</p>
+
+    <form id="survey-form">
+  <label id="name-label">Nombre: <input id="name" placeholder="introduce tu nombre" type="text" name="name" size="30"></label>
+  <label id="email-label">Correo: <input id="email" placeholder="introduce tu email" type="email" name="email" size="50"></label>
+  <label id="number-label">Numero: <input id="number" placeholder="numero" type="number" name="number" size="10" min="0" max="99"></label>
+  <input id="dropdown"><label id="sex-label">Sexo: <select name="sex">
+    <option value="1">Hombre</option>
+    <option value="2">Mujer</option>
+    <option value="3">Otro</option>
+  </select>
+  </p>
+  </label>
+  <label id="gmail-label">
+  <input type="radio" name="correo utilizado" value="gmail">gmail
+  </label>
+  <label id="gmail-label">
+  <input type="radio" name="correo utilizado" value="hotmail">hotmail
+  </label>
+  <label id="gmail-label">
+  <input type="radio" name="correo utilizado" value="yahoo">yahoo
+  </label>
+</form>
+</body>
+</html>
