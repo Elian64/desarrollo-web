@@ -6,13 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina-producto</title>
 </head>
+<style>
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+background-color: brown;
+}
+
+#header-img{
+
+    max-width: 50%;
+    max-height: 50%;
+}
+
+@media (max-width: 600px) {
+body{
+
+font-size: small;
+background-color: brown;
+
+}
+
+
+}
+
+</style>
 <body>
+    <div class="flex">
     <header id="header">
         <img src="imagenes/logo.png" alt="img" id="header-img">
         <nav id="nav-bar">
-
+            <ul>
+                <li class="nav-link"><a href="index.html">Inicio</a></li>
+                <li class="nav-link"><a href="imagenes/informatica.jpg">Productos</a></li>
+                <li class="nav-link"><a href="https://concepto.de/componentes-de-una-computadora/">Informacion</a></li>
+            </ul>
         </nav>
     </header>
-    
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/abRtecD1WgU" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <form id="form" action="https://www. reecodecamp.com/email-submit"  method="post">
+        <label id="name-label">Nombre: <input id="name" placeholder="introduce tu nombre" type="text" name="name" size="30"></label>
+        <br>
+        <label id="email-label">Email: <input id="email" placeholder="introduce tu email" type="email" name="email" size="50"></label>
+        <br>
+        <label id="number-label">Edad: <input id="number" placeholder="numero" type="number" name="number" size="10" min="0" max="99"></label>
+        <input id="submit" type="submit" value="Enviar formulario" />
+    </form>
+</div>
 </body>
+
 </html>
